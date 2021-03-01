@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import PropTypes from "prop-types";
+import ProfileComponent from './Profile/ProfileComponent';
+import myImage from './Profile/img.jpg';
 
 function App() {
+
+  const handelName = (name ) => {
+    alert(`Hi, I am ${name}`)
+}
+
+const imgStyle = {
+  margin: '16px',
+  padding: '16px',
+  boxSizing: 'border-box',
+  borderRadius: '5px',
+  boxShadow: '0 2px 5px cyan'
+}
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ProfileComponent fullName="Ahmed ZNOUDA" profession="Born on 03th May, 1991 in Tunisia" 
+          job="Full Stack JS Developer" myName= {handelName}> <img src={myImage} alt="image" style={imgStyle}/> </ProfileComponent>
     </div>
   );
 }
