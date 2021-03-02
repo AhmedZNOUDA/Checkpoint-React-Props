@@ -5,8 +5,8 @@ const ProfileComponent = (props) => {
         <div>
             {props.myName(props.fullName)}
             <h1 style={{fontSize: '40px', fontWeight: '700', fontFamily: 'cursive', color: 'dodgerblue'}}>My Name is: {props.fullName} </h1>
-            <p style={{fontSize: '22px', fontWeight: 'bold', fontFamily: 'cursive', color: 'cyan'}}> {props.profession} </p>
-            <p style={{fontSize: '22px', fontWeight: 'bold', fontFamily: 'cursive', color: 'cyan'}}>My job is: {props.job} </p>
+            <p style={{fontSize: '22px', fontWeight: 'bold', fontFamily: 'cursive', color: 'cyan'}}> {props.bio} </p>
+            <p style={{fontSize: '22px', fontWeight: 'bold', fontFamily: 'cursive', color: 'cyan'}}>My job is: {props.profession} </p>
             <p> {props.children} </p>
         </div>
     )
@@ -14,8 +14,8 @@ const ProfileComponent = (props) => {
 
 ProfileComponent.defaultProps = {
     fullName: "Ahmed",
-    profession: "Born on 01 January, 1970 in Paris",
-    job: "Student"
+    bio: "Born on 01 January, 1970 in Paris",
+    profession: "Student"
 }
 
 ProfileComponent.propTypes = {
