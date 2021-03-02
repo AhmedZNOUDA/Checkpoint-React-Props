@@ -19,8 +19,8 @@ const imgStyle = {
 
   return (
     <div className="App">
-      <ProfileComponent fullName="Ahmed ZNOUDA" profession="Born on 03th May, 1991 in Tunisia" 
-          job="Full Stack JS Developer" myName= {handelName}> <img src={myImage} alt="image" style={imgStyle}/> </ProfileComponent>
+      <ProfileComponent fullName="Ahmed ZNOUDA" bio="Born on 03th May, 1991 in Tunisia" 
+          profession="Full Stack JS Developer" myName= {handelName}> <img src={myImage} alt="image" style={imgStyle}/> </ProfileComponent>
     </div>
   );
 }
